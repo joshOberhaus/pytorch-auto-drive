@@ -73,7 +73,7 @@ def main():
     print("\n3. Running lane detection visualization...")
     
     image_dir = os.path.join(test_images_path, 'lane_test_images', '05171008_0748.MP4')
-    output_dir = 'demo_results/culane_visualization'
+    output_dir = 'output/demo_results/culane_visualization'
     config_file = 'configs/lane_detection/baseline/erfnet_culane.py'
     
     # Create visualization command
@@ -114,7 +114,7 @@ def main():
     # 4. Optional: Run video visualization
     print("\n4. Running video visualization (optional)...")
     video_input = os.path.join(test_images_path, 'lane_test_images', 'tusimple_val_1min.avi')
-    video_output = 'demo_results/tusimple_prediction.avi'
+    video_output = 'output/demo_results/tusimple_prediction.avi'
     
     if os.path.exists(video_input):
         video_cmd = [

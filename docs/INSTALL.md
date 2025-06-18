@@ -20,10 +20,11 @@ cd pytorch-auto-drive
 The default Conda env (step-by-step):
 
 ```
-conda create -n pad python=3.6
+conda create -n pad python=3.10
 conda activate pad
-conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.2 -c pytorch
-pip install mmcv-full==1.3.5 -f https://download.openmmlab.com/mmcv/dist/cu102/torch1.6.0/index.html
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+conda install -c conda-forge cudatoolkit-dev -y
+pip install mmcv-full
 pip install -r requirements.txt
 ```
 

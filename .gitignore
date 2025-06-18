@@ -4,5 +4,6 @@ __pycache__/
 .vscode
 
 # custom
+PAD_test_images/
 output
 checkpoints
